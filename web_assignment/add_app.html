@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة تطبيق جديد </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="apps.html">التطبيقات</a>
+        <a href="add_app.html">إضافة تطبيق</a>
+    </nav>
+    <main class="container">
+        <h1>إضافة معلومات تطبيق جديد</h1>
+        <form action="apps.html">
+            <main>
+                <label for="AppName">اسم التطبيق:</label>
+              <p>يسمح بادخال الحروف باللغة الانكليزية فقط بدون مسافات</p>
+                <input type="text" id="englishInput" lang="en" pattern="[a-zA-Z]*" name="AppName" oninput="vaidateEnglish(this)" required placeholder="AppName">
+            </main>
+            <main>
+                <label for="company">الشركة المصنعة:</label>
+                <p>يسمح بادخال الحروف باللغة الانكليزية فقط ويسمح إدخال الارقام</p>
+                <input type="text" id="englishInput" lang="en" pattern="[a-zA-Z0-9]*" name="company" oninput="vaidateEnglish(this)" required placeholder="company1">
+            </main>
+            <main>
+                <label for="website">الموقع الإلكتروني (URL):</label>
+                <input type="url" id="website" name="website" required placeholder="مثال: https://www.example.com">
+            </main>
+            <main>
+                <label>نوع الترخيص:</label>
+                <input type="radio" id="free" name="isFree" value="مجاني" required>
+                <label for="free" style="display: inline-block; font-weight: normal; margin-left: 5px;">مجاني</label>
+                <input type="radio" id="paid" name="isFree" value="غير مجاني">
+                <label for="paid" style="display: inline-block; font-weight: normal; margin-left: 5px;">غير مجاني</label>
+            </main>
+            <main>
+                <label for="field">مجال الاستخدام (قائمة محددة مسبقاً):</label>
+                <select id="field" name="field" required>
+                    <option value="">-- اختر المجال --</option>
+                    <option value="Robotics">Robotics</option>
+                    <option value="Education">Education</option>
+                    <option value="E-Commerce">E-Commerce</option>
+                    <option value="HealthCare">HealthCare</option>
+                    <option value="Finance">Finance</option>
+                </select>
+            </main>
+            <main>
+                <label for="description">شرح مختصر عن التطبيق:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </main>
+
+            <main>
+                <input type="submit" value="إرسال">
+
+            </main>
+        </form>
+    </main>
+    <footer>
+                <p>&copy;جميع الحقوق محفوظة 2025</p>
+             </footer>
+             <script src="myFunction.js"></script>
+             </body>
+             </html>
+</body>
+</html>

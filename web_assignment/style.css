@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6E6FA; 
+    color: #4B0082;
+    margin: 0;
+    padding: 0;
+     text-align: center;
+      direction: rtl;
+        
+}
+
+nav {
+    background-color: #800080; 
+    padding: 10px 0;
+    text-align: center;
+    
+}
+nav a {
+    color: white; 
+    text-decoration:none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+
+    
+
+    
+}
+nav a:hover {
+    background-color: #4B0082; 
+    
+}
+
+label {
+    display: block;
+    font-family:  'Arial', sans-serif;
+    font-size:1.3em; 
+    color: #800080; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #9966CC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #4B0082;
+    background-color: #F8F8FF;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: #800080;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #4B0082;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.1);
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #D8BFD8;
+    text-align: right;
+}
+th {
+    background-color: #9370DB; 
+    color: white;
+}
+.detailsRow {
+  display: none;
+  background-color: #f9f9f9;
+}
+
+.detailsRow.active {
+  display: table-row;
+}
+
+/* تحسين مظهر محتوى التفاصيل */
+.details {
+  padding: 15px;
+  text-align: right;
+  color: #333;
+}
+
+.details img {
+  margin-top: 10px;
+  max-width: 200px;
+  border-radius: 8px;
+  display: block;
+}
